@@ -1,0 +1,119 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    --color1b:rgba(37, 37, 131, 0.911);
+    --color1b2:rgba(0, 0, 255, 0.23);
+    --color2w:white;
+    --color3g:grey;
+    --color3g2:rgba(128, 128, 128, 0.333);
+    --color4ck:black;
+    --color5or:rgb(238, 95, 0);
+}
+
+#foothtml li{
+    list-style-type:none;
+    padding:4px;
+}
+#foothtml a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+footer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.64),rgba(0, 0, 0, 0.497)),url(/finalproj2/xyz/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color:white;
+    position:absolute;
+    top:1000px;
+    width:1530px;
+    border-top: 2px solid var(--color1b2);
+}
+#foothtml .f-grid{
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 230px 300px 500px 310px;
+    column-gap: 10px;
+    justify-content:center;
+}
+.gridf{
+    text-align: center;
+    margin-top:20px;
+    background-color: rgba(0, 0, 0, 0.137);
+}
+.f-3,.f-2{
+    text-align: left;
+}
+.f-2{
+    padding-left:5px;
+    padding-right:5px;
+}
+.f-1{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+#foothtml #abtt,#foothtml #lnk,#foothtml #clnt,#foothtml #wtkm{
+    margin-bottom: 10px;
+    margin-top: 2px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--color5or);
+}
+#foothtml #abtt p{
+    text-align: initial;
+    font-size: 12px;
+}
+
+#foothtml #lnk{
+    position: relative;
+    right:22px;
+}
+#foothtml #gal1,#foothtml #otp1,#foothtml #ota1{
+    display: inline;
+    width:50%;
+}
+#foothtml .rights{
+   text-align: center;
+   border: 2px solid var(--color1b2);
+    background-color: var(--color1b);
+}
+#foothtml address{
+padding: 5px;
+position: relative;
+top:20px;
+padding-left: 10px;
+}
+#foothtml #list2 li,#foothtml #list1 li{
+    list-style-type: square;
+    list-style-position: inside;
+}
+#foothtml #list10 li{    width:35%;}
+#foothtml #list1 li:last-child{
+    list-style-type: none;
+    position: relative;
+    left:390px;
+    top:-20px;
+    width:20%;
+}
+#foothtml #list1 li{
+    width:60%;
+}
+#foothtml #list20{
+    position: relative;
+    top:-128px;
+    left:112px;
+    text-align: left;
+    width:60%;
+}
+#foothtml #list2{
+    position: relative;
+    text-align: right;
+    top:-165px;
+    left:315px;
+    width:36%;
+    text-align: right;
+}
+#foothtml #list1:last-child{
+    position: relative;
+    left:360px;
+    top:-12px;}

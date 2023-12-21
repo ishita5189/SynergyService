@@ -1,0 +1,286 @@
+/*----------
+Service
+---------------------
+*/
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    --color1b:rgba(37, 37, 131, 0.911);
+    --color1b2:rgba(0, 0, 255, 0.23);
+    --color2w:white;
+    --color3g:rgb(60, 58, 58);
+    --color3g2:rgba(128, 128, 128, 0.333);
+    --color4ck:black;
+    --color6gr:rgba(61, 149, 61, 0.59);
+}
+#foothtml{
+  width:1512px;
+  top:1700px;
+}
+/*--------------------
+navbar
+--------------------------*/
+#logo{
+  cursor:pointer;
+  height:32px;
+  width:49px;
+  position:absolute;
+  top:5px;
+  left:40px;
+  border:4px rgba(255, 255, 255, 0.266) solid;
+  box-shadow: black 2px 2px;
+}
+.navbar ul li{
+  list-style-type: none;
+  padding:1px;
+  display:inline-flex;
+  flex-direction: column-reverse;
+  position:relative;
+  right:40px;
+  margin:0 3px;
+}
+#maintittle{
+  position: absolute;
+  left:70px;
+  display: inline-block;
+  top:180px;
+  color:white;
+  background-color: #3e3e3e;
+  padding:6px;
+}
+#maintittle:hover{
+  color: rgba(253, 177, 0, 0.504);
+  cursor: pointer;
+}
+#maintittle::after{
+  content:'';
+  height:4px;
+  width:0;
+  position:absolute;
+  left:0;
+  background:rgba(253, 177, 0, 0.504);
+  bottom:-2px;
+  transition:0.5s;    
+}
+#maintittle:hover:after{
+  width:100%;
+}
+#nimg2{
+  position: relative;
+  top:50px;
+  z-index:-2;
+  height:190px;
+  width:100%;
+}
+.navbar ul li a{
+  text-decoration:none;
+  color:var(--color2w);
+  background-color: rgba(0, 0, 0, 0);
+}
+.navbar ul li a:hover{
+  background-color: rgba(0, 0, 0, 0.197);
+}
+.navbar{
+  z-index:3;
+position:fixed;
+top:0px;
+width:100%;
+  margin:auto;
+  padding:15px 0px 15px 0px;
+  display:flex;
+  flex-direction: row-reverse;
+  align-items:center;
+  justify-content: space-between;
+box-shadow: var(--color6gr) 4px 4px ;
+background-color: var(--color1b);
+text-shadow: 1px 1px 2px black;
+}
+/*
+navbar more
+*/
+.more{ margin: 0px 15px 0px 0px; 
+color:white;   }
+.navbar .sm1 li:hover:after{
+  width:0%;
+}
+.sm1 li{
+position:absolute;
+width:220px;
+text-align:top;
+background:var(--color1b);
+box-shadow: var(--color6gr) 4px 4px ;
+padding-bottom: 15px;
+padding-top:15px;
+height:30px;
+}
+#gal,#blg,#clnt{
+  padding-left:82px;
+  padding-right:82px;
+  padding-top:8px;
+}
+#ota,#otp{
+  padding-left:25px;
+  padding-right:25px;
+  padding-top:8px;
+}
+.more:hover{
+  background-color:#3e3e3e;
+}
+.sm1 li a:hover{
+  background-color: transparent;
+  color:aliceblue;
+}
+    .submenu{
+      display:none;
+    }
+    .submenu li{
+      border-bottom:1px solid darkblue;
+    }
+    .submenu li :last-child{
+      border-bottom:none;
+    }
+    .navbar ul li:hover .submenu{
+      display:block;
+      position:absolute;
+      margin-top:0px;
+      margin-left:-15px;
+      top:19px;
+      right:-60px;
+    } 
+    .more .fa-caret-down{
+      position: absolute;
+      right:-12px;
+      display: inline-flex;
+      margin:2px;
+      background-color: transparent;
+        }
+#stext{
+  background-color: #2121df39;
+  padding:8px;
+  position: relative;
+  top:60px;
+  left:500px;
+  display: inline-block;
+}
+/*_______-------------
+serv-1
+-----------------*/
+#serbg1{
+  position: relative;
+  top:100px;
+  left:300px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#serbgtxt{
+  width:600px;
+  height:150px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.59);
+  color:white;
+  left:600px;
+  text-align: left;
+  bottom:94px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+/*------------------------
+serv-3
+---------------------------*/
+#serbg3txt{
+  background-color: rgba(0, 0, 0, 0.59);
+  color:white;
+  text-align: right;
+  width:600px;
+  height:150px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  left:300px;
+  bottom:18px;
+  top:120px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#serbg3{  position: relative;
+ bottom:200px;
+  left:940px;
+  top:-60px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+/*------------------------
+serv-2
+---------------------------*/
+.boxserv-grid{
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  display: grid;
+  grid-template-rows: 395px;
+  grid-template-columns:repeat(4,310px);
+  column-gap: 20px;
+  width:1000px;
+  position: relative;
+}
+.data{
+  width:300px;
+}
+.boxser{
+  padding-top: 10px;
+}
+.boxser h3{
+  background-color: var(--color1b);
+  color: white;
+  border:2px solid black;
+  text-align: center;
+}
+.boxser p{
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.351);
+  padding-bottom: 6px;
+}
+.boxser img{
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+ position: relative;
+ left:50px;
+ border: 1px solid black;
+ box-shadow: black 2px 2px;
+}
+.serv2{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.348),rgba(0, 0, 0, 0.442)),url(/finalproj2/more/img/bgs/auto-mechanic-checking-car.jpg);
+ background-repeat: no-repeat;
+ background-size: 1450px;
+ background-attachment: fixed;
+ transition: all 0.5s linear;
+ position: relative;
+ left:130px;
+  width:1320px;
+  padding-bottom: 20px;
+ box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+/*------------------------
+serv-4
+---------------------------*/
+#serbg4{
+  position: relative;
+  left:300px;
+  top:40px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+#ser4bgtxt{
+  width:640px;
+  height:150px;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.59);
+  color:white;
+  left:600px;
+  text-align: left;
+  bottom:150px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;}
