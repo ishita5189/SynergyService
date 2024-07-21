@@ -7,6 +7,9 @@ This is a project for business Synergy Service.
  
  # Screenshot
  
+ ![Screenshot](ss.png)
+
+
 
 # Table of Contents
 1. Project Structure
